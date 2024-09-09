@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuraçoes - Ilumensagems</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="container">
+        <div id="headerArea">
+            
+            
+        <nav id="navbar"><ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="view.html">Sua Caixa</a></li>
+            <li><a href="config.html">Configuraçoes</a></li>
+            <li><a href="register.html">Criar Conta</a></li>
+            <li><a href="login.html">Entrar</a></li>
+          </ul></nav></div>
+
+        <div id="flex">
+            
+            <main>
+                <h2>Configuraçoes</h2>
+                <p>Mudar Nome</p>
+                <input type="text" id="novo-nome" placeholder="Novo Nome de Usuario"> <button onclick="mudarNome()">Atualizar</button>
+                <p>Mudar Email</p>
+                <input type="email" id="email-ativo" placeholder="Email Ativo"> 
+                <input type="email" id="novo-email" placeholder="Novo Email"> <button onclick="mudarEmail()">Atualizar</button>
+                <p>Mudar Senha</p>
+                <input type="password" id="senha-ativa" placeholder="Senha Ativa"> 
+                <input type="password" id="nova-senha" placeholder="Nova Senha"> <button onclick="mudarSenha()">Atualizar</button>
+                <p>Mudar Paleta de Cores</p>
+                <div class="paleta">
+                <input type="color" id="plt1">
+                <input type="color" id="plt2">
+                <input type="color" id="plt3">
+                <input type="color" id="plt4"> <br><br>
+                <button onclick="mudarPlt()">Atualizar</button>
+                </div>
+
+
+            </main>
+            
+        </div>
+        
+    <footer id="footer">
+        <a href="draw.html?id=1">enviarTest</a></footer>
+    </div>
+    
+    <script src="usersAPI.js"></script>
+    
+</body>

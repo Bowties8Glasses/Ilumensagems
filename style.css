@@ -1,0 +1,266 @@
+/* Layout CSS foi montado asima da base feita por "Sadgrl" (https://goblin-heart.net/sadgrl/) */
+
+:root {
+                --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+                --body-bg-image: url('https://sadhost.neocities.org/images/tiles/ruututausta.gif');
+
+                /* colors */
+                --content: #d3b2b2;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+                font-style: italic;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            body {
+                font-family: 'Nunito', sans-serif;
+                margin: 0;
+                background-color: rgb(154, 54, 0);
+                /* you can delete the line below if you'd prefer to not use an image */
+                background-size: 65px;
+                color: rgb(227, 114, 8);
+                background-image: var(--body-bg-image);
+                
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+
+            #container {
+                max-width: 550px;
+                margin: 0 auto;
+            }
+
+            #container a {
+                color: rgb(221, 63, 15);
+                font-weight: bold;
+            }
+
+            #header {
+                width: 100%;
+                background-color: #b0a2db;
+                height: 150px;
+                background-image: var(--header-image);
+                background-size: 100%;
+            }
+
+            /* navigation section!! */
+            #navbar {
+                height: 40px;
+                background-color: rgb(235, 140, 140);
+                /* navbar color */
+                width: 100%;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+            }
+
+            /* navigation links*/
+            #navbar li a {
+                color: rgb(252, 248, 227);
+                /* navbar text color */
+                font-weight: 800;
+                text-decoration: none;
+                /* this removes the underline */
+            }
+
+            #navbar li a:hover {
+                color: #4a3485;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+
+            aside {
+                background-color: #6948ab;
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+                /* this makes the sidebar text slightly smaller */
+            }
+
+            main {
+                background-color: rgb(244, 242, 234);
+                flex: 1;
+                padding: 10px;
+                order: 2;
+                text-align: center;
+                
+            }
+
+            canvas {
+                border: 2px solid rgb(195, 155, 155);
+                
+            }
+
+            */ #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            footer {
+                background-color: rgb(235, 140, 140);
+                /* background color for footer */
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                /* this centers the footer text */
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #c34a4c;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0; 
+            }
+            #caixa-desenhos img {
+                border: 2px solid rgb(195, 155, 155);
+            }
+
+            #caixa-desenhos li {
+                padding-bottom: 10px;
+            }
+
+            #caixa-desenhos button {
+                padding: 10px 20px; /* Define a margem interna dos botões */
+                background-color: #ff4e4e; /* Define a cor de fundo dos botões */
+                color: white; /* Define a cor do texto dos botões */
+                border: none; /* Remove a borda dos botões */
+                border-radius: 10px; /* Adiciona bordas arredondadas aos botões */
+                cursor: pointer; /* Altera o cursor para pointer ao passar sobre o botão */
+                
+                
+            }
+            
+            button {
+                padding: 8px 10px; /* Define a margem interna dos botões */
+                background-color: #f9b883; /* Define a cor de fundo dos botões */
+                color: white; /* Define a cor do texto dos botões */
+                border: none; /* Remove a borda dos botões */
+                border-radius: 10px; /* Adiciona bordas arredondadas aos botões */
+                cursor: pointer; /* Altera o cursor para pointer ao passar sobre o botão */
+                
+                
+            }
+
+            #send {
+                padding: 15px 220px; /* Define a margem interna dos botões */
+                font-size: 20px;
+            }
+
+            .toolbox {
+                padding-bottom: 8px;
+            }
+
+            .toolbox button {
+                font-size: 20px;
+                padding: 5px 10px;
+                
+                
+            }
+            .paleta input {
+                cursor: pointer;
+                padding: 2px 2px;
+                border: #c34a4c;
+                border-radius: 5px;
+            }
+
+            #draw-link {
+                background-color: #ffd1c3;
+                border-radius: 5px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+
+            
+          
+
+            h1 {
+                font-size: 25px;
+            }
+
+            input {
+                
+                margin: 5px; /* Adiciona uma margem externa de 10px */
+                padding: 8px; /* Adiciona uma margem interna de 10px */
+                font-size: 12px; /* Define o tamanho da fonte dos campos de entrada */
+            }
+
+            strong {
+                /* this styles bold text */
+                color: #ED64F5;
+            }
+
+            .box {
+                background-color: #13092D;
+                border: 1px solid #ED64F5;
+                padding: 10px;
+            }
+
+
+            #topBar {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #13092D;
+            }
+
+            
+
+
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}

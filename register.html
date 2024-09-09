@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - Ilumensagems</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="container">
+        <div id="headerArea">
+            
+            
+        <nav id="navbar" ><ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="view.html">Sua Caixa</a></li>
+            <li><a href="config.html">Configuraçoes</a></li>
+            <li><a href="register.html">Criar Conta</a></li>
+            <li><a href="login.html">Entrar</a></li>
+          </ul></nav></div>
+
+        <div id="flex">
+            
+            <main>
+                <h2>Crie Sua Conta</h2>
+                <p>Insira suas informaçoes</p>
+                <input type="text" id="nome" placeholder="Nome de Usuario"> <br><br>
+                <input type="email" id="email" placeholder="Email"> <br><br>
+                <input type="password" id="senha" placeholder="Senha"> 
+                <p>Monte sua paleta de cores</p>
+                <div class="paleta">
+                <input type="color" id="plt1">
+                <input type="color" id="plt2">
+                <input type="color" id="plt3">
+                <input type="color" id="plt4"> <br><br>
+                <button onclick="adicionarUsuario()">Criar Conta</button> 
+                </div>
+
+
+            </main>
+            
+        </div>
+        
+    <footer id="footer" >
+        <a href="draw.html?id=1">enviarTest</a></footer>
+    </div>
+    
+    <script src="usersAPI.js"></script>
+</body>
