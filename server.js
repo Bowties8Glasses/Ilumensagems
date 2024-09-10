@@ -2,7 +2,6 @@ const express = require('express'); // Importa o pacote Express
 const mysql = require('mysql2'); // Importa o pacote MySQL2
 const bodyParser = require('body-parser'); // Importa o pacote Body-Parser
 const cors = require('cors'); // Importa o pacote CORS
-const jwt = require('jsonwebtoken')
 const fs = require('fs');// Chama o FileSystem
 
 
@@ -10,8 +9,6 @@ const app = express(); // Cria uma nova aplicação Express
 app.use(bodyParser.json()); // Usa o Body-Parser para lidar com dados JSON
 app.use(cors()); // Usa o CORS para permitir requisições de outras origens
 
-
-const SECRET_KEY = 'BowBow'; // palavra chave para JWT
 
 // Configuração da conexão com o banco de dados
 const connection = mysql.createConnection({
